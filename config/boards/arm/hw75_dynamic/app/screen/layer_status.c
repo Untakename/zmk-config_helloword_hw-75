@@ -77,13 +77,13 @@ int layer_status_init(lv_obj_t *parent)
 	lv_style_init(&st_item);
 	lv_style_set_radius(&st_item, LV_STATE_DEFAULT, 2);
 	lv_style_set_border_width(&st_item, LV_STATE_DEFAULT, 0);
-	lv_style_set_border_color(&st_item, LV_STATE_DEFAULT, LV_COLOR_BLACK);
+	lv_style_set_border_color(&st_item, LV_STATE_DEFAULT, LV_COLOR_RED);
 	lv_style_set_margin_all(&st_item, LV_STATE_DEFAULT, 0);
 	lv_style_set_bg_opa(&st_item, LV_STATE_DEFAULT, LV_OPA_100);
 	lv_style_set_bg_color(&st_item, LV_STATE_DEFAULT, LV_COLOR_TRANSP);
 	lv_style_set_text_color(&st_item, LV_STATE_DEFAULT, LV_COLOR_BLACK);
 	lv_style_set_bg_color(&st_item, LV_STATE_FOCUSED, LV_COLOR_BLACK);
-	lv_style_set_text_color(&st_item, LV_STATE_FOCUSED, LV_COLOR_WHITE);
+	lv_style_set_text_color(&st_item, LV_STATE_FOCUSED, LV_COLOR_RED);
 	lv_style_set_text_font(&st_item, LV_STATE_DEFAULT, &icons_19);
 
 	lv_obj_t *list = layer_list = lv_list_create(parent, NULL);
